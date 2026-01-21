@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <section style="background-color: rgba(127, 163, 128, 0.6); z-index: 10; position: relative;">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <!-- Logo -->
+                <div class="col-4">
+                    <div class="yoga-icon d-flex justify-content-start align-items-center py-3">
+                        <h3>YOGALAX</h3>
+                    </div>
+                </div>
+
+                <!-- Toggle Button for Mobile -->
+                <div class="col-8 d-lg-none d-flex justify-content-end">
+                    <button style="background-color: transparent; color: rgb(17, 16, 16);" id="toggleBtn"
+                        class="border-0">
+                        <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                    </button>
+                </div>
+
+                <!-- Hidden Menu for Mobile -->
+                <div class="col-12 d-lg-none">
+                    <div class="menu" id="mobileMenu" style="display: none;">
+                        <ul class="d-flex flex-column gap-2 py-2 ps-0" style="list-style: none;">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Classes.html">Classes</a></li>
+                            <li><a href="Schedule.html">Schedule</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Menu for Desktop -->
+                <div class="col-8 d-lg-block d-none">
+                    <div class="menu">
+                        <ul class="d-flex justify-content-end align-items-center gap-4 py-3 m-0"
+                            style="list-style: none;">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Classes.html">Classes</a></li>
+                            <li><a href="Schedule.html">Schedule</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner with Image and Overlay -->
+    <!-- Banner with Image and Overlay -->
+    <div class="container-fluid d-flex justify-content-center align-items-center text-center"
+        style="position: relative; min-height: 100vh; background-image: url('./assets/image/bg_3.jpg'); background-size: cover; background-position: center;">
+
+        <!-- Color Overlay -->
+        <div
+            style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(127, 163, 128, 0.6); z-index: 1;">
+        </div>
+
+        <!-- Centered Text -->
+        <div style="position: relative; z-index: 2;">
+            <h1 style="color: white; font-size: 80px;font-weight: 300;">Contact Us</h1>
+            <h5 style="color: white; font-weight: 300;">HOME CONTACT</h5>
+        </div>
+    </div>
+
+    <!-- contact info start -->
+    <section style="padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="Contact_information">
+                        <h4>Contact Information</h4>
+
+                        <p>Address : <span style="color: rgba(128, 128, 128, 0.826);">198 West 21th Street, Suite 721
+                                New York NY 10016</span></p>
+                        <p>
+                            Phone: <a href="#">+ 1235 2355 98</a>
+                        </p>
+                        <p>Email: <a href="#">info@yoursite.com</a></p>
+                        <p>Website: <a href="#">yoursite.com</a></p>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="contact_info d-flex flex-wrap">
+                        <div class="col-6 px-2">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="col-6 px-2">
+                            <input type="email" placeholder="Your Email">
+
+                        </div>
+                        <div class="col-12 px-2">
+                            <input type="text" placeholder="Subject">
+
+                        </div>
+                        <div class="col-12 px-2">
+                            <textarea name="message" id="message" placeholder="message"></textarea>
+                        </div>
+                        <div class="col-4 px-2">
+                            <button style="background-color: #7fa380;padding: 15px 55px; border: none;"><a href="#"
+                                    style="color: white;text-decoration: none;font-size: 15px;">Send
+                                    Message</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact info end -->
+
+    <!-- footer start  -->
+    <section style="padding: 50px 0px 80px 0px; background-color: #99bc9b;">
+        <div class="container">
+            <div class="row d-flex mb-5">
+                <div class="col-12 col-lg-3">
+                    <div class="name">
+                        <h3 style="color: white;">Yogalax</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p style="font-size: 24px; margin-bottom: 48px;color: white;">203 Fake St. Mountain View, San
+                        Francisco,
+                        California, USA</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <ul class="d-flex">
+                        <li class="pe-lg-3 pe-3">
+                            <i class="fa-brands fa-twitter"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                        <li class="pe-lg-3 pe-3">
+                            <i class="fa-brands fa-facebook-f"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                        <li class="pe-lg-3 pe-3">
+                            <i class="fa-brands fa-instagram"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+        <p class="text-center text-white">Copyright ©2025 All rights reserved | This template is made with by Ayushi</p>
+    </section>
+    <!-- footer end  -->
+
+
+
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Effective Therapy Against Stress.", "Inspiration For Joyful Living.", "Inspiration For Joyful Living", "Effective Therapy Against Stress"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#toggleBtn').click(function () {
+                $('#mobileMenu').slideToggle();
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

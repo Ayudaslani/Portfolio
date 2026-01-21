@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    
+    <!-- banner start -->
+    <section class="py-4" style="background: linear-gradient(to bottom, #A7C1A8, #dbe6dd, #edf2ef);
+">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-4">
+                    <div class="yoga-icon d-flex justify-content-start align-items-center">
+                        <h3>YOGALAX</h3>
+                    </div>
+                </div>
+                <div class="col-8 d-lg-none d-flex justify-content-end">
+                    <button style="background-color: transparent; color: rgb(17, 16, 16);" id="toggleBtn"
+                        class="border-0">
+                        <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                    </button>
+                </div>
+
+                <!-- Hidden Menu for Mobile -->
+                <div class="col-12 d-lg-none">
+                    <div class="menu" id="mobileMenu" style="display: none;">
+                        <ul class="d-flex flex-column gap-2 py-2 ps-0" style="list-style: none;">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Classes.html">Classes</a></li>
+                            <li><a href="Schedule.html">Schedule</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Menu for Desktop -->
+                <div class="col-8 d-lg-block d-none">
+                    <div class="menu">
+                        <ul class="d-flex justify-content-end align-items-center gap-4 py-3 m-0"
+                            style="list-style: none;">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Classes.html">Classes</a></li>
+                            <li><a href="Schedule.html">Schedule</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex py-5">
+                <div class="col-12 col-lg-7">
+                    <h1> <span id="typed"
+                            style="font-size: 60px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #1c361d;"></span>
+                    </h1>
+                    <p style="font-size: 30px;" class="mt-4"> Do Yoga today for a better tomorrow</p>
+                    <button class="mt-4"
+                        style="border: none;border-radius: 18px; padding: 15px; background-color: #99bc9b;">
+                        15 Day free Trial
+                    </button>
+
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-start">
+                    <div class="banner-img">
+                        <img src="assets/image/c-4.png" alt="" style="height: 100%; width: 100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner end -->
+
+
+    <!-- yoga intro stat -->
+
+
+    <section
+        style="background-image: url(./assets/image/intro.jpg);position: relative; background-size: cover; padding: 100px;">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <div class="title">
+                        <h2 class="col-12" style="font-size: 66px;font-weight: 400;">Why You Should Go To Yoga</h2>
+                        <p style="text-align: justify;padding: 10px 0px;color: gray;">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Ab nobis vitae natus quae ad nemo corrupti a architecto, id
+                            accusantium veritatis voluptas numquam, cupiditate ipsam eius quod qui aperiam optio
+                            laboriosam laborum quibusdam asperiores nihil? Odio fugiat commodi .</p>
+                    </div>
+                    <div class="yoga-info d-flex align-items-center py-2">
+                        <div class="col-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Yoga Boots brain Power</p>
+                        </div>
+                    </div>
+                    <div class="yoga-info d-flex align-items-center py-2">
+                        <div class="col-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Yoga helps you to breathe better</p>
+                        </div>
+                    </div>
+                    <div class="yoga-info d-flex align-items-center py-2">
+                        <div class="col-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Yoga improve your strength</p>
+                        </div>
+                    </div>
+                    <div class="yoga-info d-flex align-items-center py-2">
+                        <div class="col-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Yoga helps you to focus</p>
+                        </div>
+                    </div>
+                    <div class="yoga-info d-flex align-items-center py-2">
+                        <div class="col-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>Yoga helps give meaning to your day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- yoga intro end -->
+
+
+
+    <section class=" bg-light" style="padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="yoga_logo_img">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <div class="yoga_information">
+                        <h3>Healthy Lifestyle
+                        </h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="yoga_logo_img">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="yoga_information">
+                        <h3>Body & Mind Balance
+                        </h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="yoga_logo_img">
+                        <i class="fa-solid fa-cannabis"></i>
+                    </div>
+                    <div class="yoga_information">
+                        <h3>Meditation Practice
+                        </h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="yoga_logo_img">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="yoga_information">
+                        <h3>Edeology
+                        </h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- yoga classes start -->
+    <section style="padding: 150px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center" style="padding-bottom: 70px;">
+                    <p style="text-transform:uppercase;color: grey; letter-spacing: 4px;">Yoga Classes</p>
+                    <h2 style="font-size: 60px;font-weight: 300;">Choose Your Level & Focus</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/class1.avif" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-12" style="font-size: 40px; font-weight: 400;">Yoga For Beginners</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/class2.avif" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-9" style="font-size: 40px; font-weight: 400;">Bikram Yoga</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/classs4.jpg" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-12" style="font-size: 40px; font-weight: 400;">Yoga For Couples</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/class5..avif" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-9" style="font-size: 40px; font-weight: 400;">Group Lessons</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/class6.avif" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-12" style="font-size: 40px; font-weight: 400;">Yoga For Pregnant</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  p-lg-0  py-3">
+                    <div class="class">
+                        <div class="classes-img">
+                            <img src="assets/image/class7.avif" alt="">
+                        </div>
+                        <div class="classes-intro">
+                            <h2 class="col-9" style="font-size: 40px; font-weight: 400;">Yoga Barre</h2>
+                            <p class="col-8 py-3">A small river named Duden flows by their place and supplies it with
+                                the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- yoga classes end -->
+
+
+
+    <!-- membership cards start  -->
+    <section style="padding: 100px 0px;" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center" style="padding-bottom: 70px;">
+                    <p style="text-transform:uppercase;color: grey; letter-spacing: 4px;">Pricing Tables</p>
+                    <h2 style="font-size: 60px;font-weight: 300; letter-spacing: 4px;">Membership Cards</h2>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                    <div class="m-card text-center">
+                        <h6 class="py-3">YEAR CARD</h6>
+                        <div class="price">
+                            <sup style="font-size: 30px;">$</sup>
+                            <span>449</span>
+                        </div>
+                        <p style="color: rgba(128, 128, 128, 0.696);">For 1 Year</p>
+                        <h3 style="font-size: 17px;letter-spacing: 2px;padding: 5px 0px;">Enjoy All The Features</h3>
+                        <ul style="color: gray;letter-spacing:1px;">
+                            <li style="padding: 6px 0px;">Onetime Access To All Club</li>
+                            <li style="padding: 6px 0px;">Group Trainer</li>
+                            <li style="padding: 6px 0px;">Book A Group Class</li>
+                            <li style="padding: 6px 0px;">Fitness Orientation</li>
+                        </ul>
+                        <button
+                            style="position: relative; top:14%;border: none; background-color: #789b7a;padding: 23px 60px;">
+                            <a href="#" style="text-decoration: none; color: white;">GET STARTED</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                    <div class="m-card text-center">
+                        <h6 class="py-3">MONTHLY CARD</h6>
+                        <div class="price">
+                            <sup style="font-size: 30px;">$</sup>
+                            <span>200</span>
+                        </div>
+                        <p style="color: rgba(128, 128, 128, 0.696);">For 1 Month</p>
+                        <h3 style="font-size: 17px;letter-spacing: 2px;padding: 5px 0px;">Enjoy All The Features</h3>
+                        <ul style="color: gray;letter-spacing:1px;">
+                            <li style="padding: 6px 0px;">Onetime Access To All Club</li>
+                            <li style="padding: 6px 0px;">Group Trainer</li>
+                            <li style="padding: 6px 0px;">Book A Group Class</li>
+                            <li style="padding: 6px 0px;">Fitness Orientation</li>
+                        </ul>
+                        <button
+                            style="position: relative; top:14%;border: none; background-color: #789b7a;padding: 23px 60px;">
+                            <a href="#" style="text-decoration: none; color: white;">GET STARTED</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                    <div class="m-card text-center">
+                        <h6 class="py-3">WEEKLY CARD</h6>
+                        <div class="price">
+                            <sup style="font-size: 30px;">$</sup>
+                            <span>85</span>
+                        </div>
+                        <p style="color: rgba(128, 128, 128, 0.696);">For 1 Week</p>
+                        <h3 style="font-size: 17px;letter-spacing: 2px;padding: 5px 0px;">Enjoy All The Features</h3>
+                        <ul style="color: gray;letter-spacing:1px;">
+                            <li style="padding: 6px 0px;">Onetime Access To All Club</li>
+                            <li style="padding: 6px 0px;">Group Trainer</li>
+                            <li style="padding: 6px 0px;">Book A Group Class</li>
+                            <li style="padding: 6px 0px;">Fitness Orientation</li>
+                        </ul>
+                        <button
+                            style="position: relative; top:14%;border: none; background-color: #789b7a;padding: 23px 60px;">
+                            <a href="#" style="text-decoration: none; color: white;">GET STARTED</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- membership cards end  -->
+
+    <!-- slider start -->
+    <!-- Swiper Section -->
+    <section class="testimonial-section" style="padding: 100px 0px;">
+        <div class="container">
+            <div class="row ">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide  px-4">
+                            <div class="testimonial">
+                                <p class="col-12 border-start px-4">"Far far away, behind the word mountains, far from
+                                    the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts."</p>
+                                <div class="img-info d-flex align-items-center">
+                                    <div class="col-4 onlyface"
+                                        style="background-image: url(./assets/image/person_1.jpg); ">
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="">Gabby Smith</h5>
+                                        <p class="role" style="margin-left: 30px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide  px-4">
+                            <div class="testimonial">
+                                <p class="col-12 border-start px-4">"Far far away, behind the word mountains, far from
+                                    the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts."</p>
+                                <div class="img-info d-flex align-items-center">
+                                    <div class="col-4 onlyface"
+                                        style="background-image: url(./assets/image/person_3.jpg); ">
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="">Kenny Bufer</h5>
+                                        <p class="role" style="margin-left: 30px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide  px-4">
+                            <div class="testimonial">
+                                <p class="col-12 border-start px-4">"Far far away, behind the word mountains, far from
+                                    the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts."</p>
+                                <div class="img-info d-flex align-items-center">
+                                    <div class="col-4 onlyface"
+                                        style="background-image: url(./assets/image/person_2.jpg); ">
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="">James dee</h5>
+                                        <p class="role" style="margin-left: 30px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 4 -->
+                        <div class="swiper-slide  px-4">
+                            <div class="testimonial">
+                                <p class="col-12 border-start px-4">"Far far away, behind the word mountains, far from
+                                    the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts."</p>
+                                <div class="img-info d-flex align-items-center">
+                                    <div class="col-4 onlyface"
+                                        style="background-image: url(./assets/image/person_4.jpg); ">
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="">Lance Roger</h5>
+                                        <p class="role" style="margin-left: 30px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- slider 5 -->
+                        <div class="swiper-slide  px-4">
+                            <div class="testimonial">
+                                <p class="col-12 border-start px-4">"Far far away, behind the word mountains, far from
+                                    the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts."</p>
+                                <div class="img-info d-flex align-items-center">
+                                    <div class="col-4 onlyface"
+                                        style="background-image: url(./assets/image/slider2.avif); ">
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="">Rubby Smith</h5>
+                                        <p class="role" style="margin-left: 30px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- slider end -->
+
+
+
+
+    <!-- counter start -->
+    <section style="background-image: url(./assets/image/bg_3.jpg);
+         background-position: top;
+         width: 100%;
+         height: auto;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;">
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="background: linear-gradient(to right, #5f8162e6, #789b7a83, #dce9dc);
+                padding: 100px 0 170px 0; font-weight: 700;">
+
+                <!-- Counter 1 -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="d-flex flex-column align-items-center text-white">
+                        <h3 id="counter1" class="counter">+</h3>
+                        <p>Happy Customer</p>
+                    </div>
+                </div>
+
+                <!-- Counter 2 -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="d-flex flex-column align-items-center text-white">
+                        <h3 id="counter2" class="counter">+</h3>
+                        <p>Yoga Workshop</p>
+                    </div>
+                </div>
+
+                <!-- Counter 3 -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="d-flex flex-column align-items-center text-white">
+                        <h3 id="counter3" class="counter">+</h3>
+                        <p>Yoga of Experience</p>
+                    </div>
+                </div>
+
+                <!-- Counter 4 -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="d-flex flex-column align-items-center text-white">
+                        <h3 id="counter4" class="counter">+</h3>
+                        <p>Lesson Conducted</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- counter end -->
+
+    <!-- Recent post start  -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="title py-4 text-center" style="padding-bottom: 70px;">
+                    <p style="text-transform:uppercase;color: grey; letter-spacing: 4px;">BLOG</p>
+                    <h2 style="font-size: 60px;font-weight: 300; letter-spacing: 4px;">Recent Posts</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/image/post1.avif" alt="">
+                        </div>
+                        <div class="post-info d-flex align-items-center">
+                            <div class="col-3">
+                                <h1>31</h1>
+                            </div>
+                            <div class="col-9">
+                                <p>2018</p>
+                                <p>December</p>
+                            </div>
+                        </div>
+                        <div class="post-intro">
+                            <h3>Young Women Doing Yoga</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/image/post2.avif" alt="">
+                        </div>
+                        <div class="post-info d-flex align-items-center">
+                            <div class="col-3">
+                                <h1>27</h1>
+                            </div>
+                            <div class="col-9">
+                                <p>2018</p>
+                                <p>December</p>
+                            </div>
+                        </div>
+                        <div class="post-intro">
+                            <h3>Young Women Doing Yoga</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="assets/image/post3.avif" alt="">
+                        </div>
+                        <div class="post-info d-flex align-items-center">
+                            <div class="col-3">
+                                <h1>25</h1>
+                            </div>
+                            <div class="col-9">
+                                <p>2018</p>
+                                <p>December</p>
+                            </div>
+                        </div>
+                        <div class="post-intro">
+                            <h3>Young Women Doing Yoga</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent post end  -->
+
+    <!-- latest photos start -->
+    <section style="padding: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="title py-5 text-center" style="padding-bottom: 70px;">
+                    <p style="text-transform:uppercase;color: grey; letter-spacing: 4px;">Gallery</p>
+                    <h2 style="font-size: 60px;font-weight: 300; letter-spacing: 4px;">See the latest photos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 py-lg-0 py-3">
+                    <div class="photos">
+                        <div class="photos-img">
+                            <img src="assets/image/photo1.avif" alt="">
+                        </div>
+                        <div class="photos-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 py-lg-0 py-3">
+                    <div class="photos">
+                        <div class="photos-img">
+                            <img src="assets/image/photo2.avif" alt="">
+                        </div>
+                        <div class="photos-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 py-lg-0 py-3">
+                    <div class="photos">
+                        <div class="photos-img">
+                            <img src="assets/image/photo3.avif" alt="">
+                        </div>
+                        <div class="photos-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 py-lg-0 py-3">
+                    <div class="photos">
+                        <div class="photos-img">
+                            <img src="assets/image/photo4.avif" alt="">
+                        </div>
+                        <div class="photos-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- latest photos end -->
+
+
+    <!-- footer start  -->
+    <section style="padding: 50px 0px 80px 0px; background-color: #99bc9b;">
+        <div class="container">
+            <div class="row d-flex mb-5">
+                <div class="col-12 col-lg-3">
+                    <div class="name">
+                        <h3 style="color: white;">Yogalax</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p style="font-size: 24px; margin-bottom: 48px;color: white;">203 Fake St. Mountain View, San
+                        Francisco,
+                        California, USA</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <ul class="d-flex">
+                        <li class="pe-3">
+                            <i class="fa-brands fa-twitter"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                        <li class="pe-3">
+                            <i class="fa-brands fa-facebook-f"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                        <li class="pe-3">
+                            <i class="fa-brands fa-instagram"
+                                style="font-size: 18px;background-color: #7fa380;color: white;padding: 16px 17px;border-radius: 50%;"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+        <p class="text-center text-white">Copyright ©2025 All rights reserved | This template is made with by Ayushi</p>
+    </section>
+    <!-- footer end  -->
+
+
+
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Effective Therapy Against Stress.", "Inspiration For Joyful Living.", "Inspiration For Joyful Living", "Effective Therapy Against Stress"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#toggleBtn').click(function () {
+                $('#mobileMenu').slideToggle();
+            });
+        });
+    </script>
+
+    <script>
+        function startCounting(elementId, start = 1, end = 1000, interval = 1000) {
+            let current = start;
+
+            const counterElement = document.getElementById(elementId);
+
+            const intervalId = setInterval(() => {
+                counterElement.textContent = current + " +";
+                if (current >= end) {
+                    clearInterval(intervalId);
+                } else {
+                    current++;
+                }
+            }, interval);
+        }
+
+        // Call the function for the four counters
+        startCounting('counter1', 1, 5000, 50);
+        startCounting('counter2', 1, 4500, 50);
+        startCounting('counter3', 1, 590, 50);
+        startCounting('counter4', 1, 900, 50);
+
+    </script>
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
+
+<!-- A7C1A8 -->
+<!-- D1D8BE -->
