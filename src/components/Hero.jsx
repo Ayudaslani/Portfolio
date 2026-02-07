@@ -11,12 +11,11 @@ const Hero = () => {
             .hero-section {
               height: auto !important;
               min-height: 100vh !important;
-              padding: 120px 20px 60px 20px !important; /* Extra top padding for navbar */
+              padding: 120px 20px 60px 20px !important;
             }
             .hero-grid {
-              grid-template-columns: 1fr !important;
+              grid-template-columns: 1fr !important; /* Single column for mobile */
               text-align: center !important;
-              gap: 80px !important;
             }
             .hero-content {
               display: flex;
@@ -26,14 +25,27 @@ const Hero = () => {
             .hero-title {
               font-size: 42px !important;
             }
-            .hero-orbit-container {
-              transform: scale(0.7); /* Scale down the orbit for mobile */
-              margin-top: 20px;
-            }
             .hero-btns {
               justify-content: center !important;
             }
+
+            /* HIDE ORBIT ON MOBILE ONLY (Below 968px) */
+            .hero-orbit-container {
+              display: none !important;
+            }
           }
+
+          /* Tablet/Laptop check: Show orbit again above 968px */
+          @media (min-width: 969px) {
+            .hero-orbit-container {
+              display: flex !important;
+            }
+          }
+          @media (max-width: 968px) {
+          .hero-orbit-container {
+            display: none !important;
+          }
+        }
         `}
       </style>
 
@@ -79,7 +91,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Right Side: Visual Element (The Tech Orbit) */}
+        {/* Right Side: Visual Element (Hidden on Mobile) */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -97,7 +109,7 @@ const Hero = () => {
           <OrbitingTag label="Express" radius={150} duration={25} delay={-5} />
           <OrbitingTag label="React" radius={190} duration={18} delay={-10} />
           <OrbitingTag label="Node.js" radius={230} duration={30} delay={-15} />
-          
+
           {/* Visual Orbit Lines */}
           {[110, 150, 190, 230].map((r, i) => (
             <div key={i} style={orbitLine(r)} />
@@ -136,10 +148,10 @@ const OrbitingTag = ({ label, radius, duration, delay }) => {
   );
 };
 
-// --- Styles ---
+// --- Styles --- (Same as before)
 
 const sectionStyle = {
-  minHeight: "100vh", // Changed from height: 100vh to prevent cutting
+  minHeight: "100vh",
   backgroundColor: "#080808",
   display: "flex",
   alignItems: "center",

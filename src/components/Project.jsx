@@ -5,7 +5,7 @@ const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: "Nerova Shipping Solutions - client Project",
+      title: "Nerova Shipping Solutions",
       desc: "A smart shipping solution offering fast, reliable, and transparent logistics management for businesses.",
       tech: ["Html", "Css", "Bootstrap", "Javascript"],
       link: "https://nerovashipping.in/",
@@ -37,8 +37,8 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Get The Corona API data",
-      desc: "Get  data of the Corona API",
+      title: "Corona API Data",
+      desc: "Live tracking and data visualization of Corona API stats.",
       tech: ["Html", "Css", "Javascript"],
       link: "./src/assets/projects/Corona_API/index.html",
       image: "./image/coronaapi.png",
@@ -46,12 +46,11 @@ const Projects = () => {
     {
       id: 6,
       title: "Yoga Website",
-      desc: "A calming yoga website offering guided poses, wellness tips, and a user-friendly practice experience.",
+      desc: "A calming yoga website offering guided poses and wellness tips.",
       tech: ["Html", "Css", "Bootstrap", "Javascript"],
       link: "./src/assets/projects/yoga/index.html",
       image: "./image/yoga.png",
     },
-
   ];
 
   return (
@@ -60,22 +59,28 @@ const Projects = () => {
         {`
           @media (max-width: 768px) {
             .projects-section {
-              padding: 40px 20px !important; /* Reduced top/bottom padding for mobile */
+              padding: 60px 15px !important;
             }
             .project-grid {
-              grid-template-columns: 1fr !important;
-              gap: 20px !important;
-            }
-            .project-header-row {
-              margin-bottom: 30px !important; /* Reduced header margin */
+              grid-template-columns: 1fr !important; /* Forces single column on mobile */
+              gap: 25px !important;
             }
             .project-heading {
-              font-size: 22px !important;
+              font-size: 20px !important;
+            }
+            .project-card {
+              max-width: 100% !important;
             }
           }
 
+          /* Hover animations */
+          .project-card:hover {
+            border-color: #00eaff !important;
+            background: #111 !important;
+          }
           .project-card:hover .project-img {
-            transform: scale(1.1);
+            transform: scale(1.08);
+            opacity: 1 !important;
           }
           .project-card:hover .project-overlay {
             opacity: 1 !important;
@@ -100,13 +105,12 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               style={projectCard}
               className="project-card"
-              whileHover={{ y: -10 }}
             >
               <div style={imageContainer}>
                 <img
@@ -117,7 +121,7 @@ const Projects = () => {
                   onError={(e) => { e.target.src = "https://via.placeholder.com/400x250/111/00eaff?text=Project+Preview"; }}
                 />
                 <div style={overlay} className="project-overlay">
-                  <span style={viewText}>VIEW PROJECT ↗</span>
+                  <span style={viewText}>EXPLORE ↗</span>
                 </div>
               </div>
 
@@ -138,10 +142,10 @@ const Projects = () => {
   );
 };
 
-// --- Updated Styles to fix top space ---
+// --- Styles ---
 
 const sectionStyle = {
-  padding: "60px 10% 100px 10%", // ⭐ Reduced top padding from 100px to 60px
+  padding: "80px 8%",
   backgroundColor: "#080808",
   display: "flex",
   justifyContent: "center",
@@ -157,31 +161,33 @@ const headerRow = {
   display: "flex",
   alignItems: "center",
   gap: "20px",
-  marginBottom: "40px", // ⭐ Reduced from 60px to 40px
+  marginBottom: "50px",
 };
 
 const labelNumber = {
   color: "#00eaff",
   fontFamily: "monospace",
-  fontSize: "20px",
+  fontSize: "clamp(16px, 2vw, 20px)",
 };
 
 const heading = {
-  fontSize: "28px",
+  fontSize: "clamp(22px, 3vw, 28px)",
   fontWeight: "800",
   color: "#fff",
   whiteSpace: "nowrap",
+  letterSpacing: "1px",
 };
 
 const horizontalLine = {
   height: "1px",
-  background: "#1a1a1a",
+  background: "linear-gradient(90deg, #1a1a1a, transparent)",
   width: "100%",
 };
 
 const projectGrid = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+  // Fixed responsiveness: minmax set to a safer 280px
+  gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
   gap: "30px",
 };
 
@@ -191,24 +197,28 @@ const projectCard = {
   borderRadius: "12px",
   overflow: "hidden",
   border: "1px solid #1a1a1a",
-  transition: "border 0.3s ease, transform 0.3s ease",
-  display: "block",
+  transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+  display: "flex",
+  flexDirection: "column",
 };
 
 const imageContainer = {
   position: "relative",
   width: "100%",
-  height: "200px",
+  paddingTop: "56.25%", // 16:9 Aspect Ratio
   overflow: "hidden",
   backgroundColor: "#111",
 };
 
 const imageStyle = {
+  position: "absolute",
+  top: 0,
+  left: 0,
   width: "100%",
   height: "100%",
   objectFit: "cover",
-  opacity: "0.8",
-  transition: "transform 0.5s ease",
+  opacity: "0.7",
+  transition: "all 0.5s ease",
 };
 
 const overlay = {
@@ -217,7 +227,7 @@ const overlay = {
   left: 0,
   width: "100%",
   height: "100%",
-  background: "rgba(0, 234, 255, 0.2)",
+  background: "linear-gradient(to top, rgba(0, 234, 255, 0.4), transparent)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -227,44 +237,52 @@ const overlay = {
 
 const viewText = {
   color: "#fff",
-  fontWeight: "bold",
-  fontSize: "14px",
-  border: "1px solid #fff",
-  padding: "8px 16px",
+  fontWeight: "800",
+  fontSize: "12px",
+  letterSpacing: "1px",
+  background: "#000",
+  padding: "10px 20px",
   borderRadius: "4px",
+  border: "1px solid #00eaff",
 };
 
 const infoSection = {
-  padding: "20px",
+  padding: "24px",
+  display: "flex",
+  flexDirection: "column",
+  flexGrow: 1,
 };
 
 const projectTitle = {
-  fontSize: "18px",
+  fontSize: "19px",
+  fontWeight: "700",
   color: "#fff",
-  marginBottom: "10px",
+  marginBottom: "12px",
 };
 
 const projectDesc = {
   fontSize: "14px",
-  color: "#777",
-  lineHeight: "1.5",
+  color: "#888",
+  lineHeight: "1.6",
   marginBottom: "20px",
-  minHeight: "42px",
 };
 
 const techRow = {
   display: "flex",
   flexWrap: "wrap",
-  gap: "10px",
+  gap: "8px",
+  marginTop: "auto", // Keeps tags at the bottom
 };
 
 const techTag = {
-  fontSize: "11px",
+  fontSize: "10px",
   color: "#00eaff",
   fontFamily: "monospace",
   background: "rgba(0, 234, 255, 0.05)",
-  padding: "4px 8px",
+  border: "1px solid rgba(0, 234, 255, 0.1)",
+  padding: "4px 10px",
   borderRadius: "4px",
+  textTransform: "uppercase",
 };
 
 export default Projects;
