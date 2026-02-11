@@ -47,7 +47,7 @@ const About = () => {
           <div style={bioContent} className="about-bio-content">
             <p style={paragraph}>
               I am <span style={{color: "#fff", fontWeight: "600"}}>Ayushi Daslani</span>, 
-              a full-stack developer dedicated to the MERN ecosystem. I specialize in building 
+              a MERN Stack Developer dedicated to the MERN ecosystem. I specialize in building 
               scalable systems where every line of code serves a purpose.
             </p>
             <p style={paragraph}>
