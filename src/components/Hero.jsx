@@ -83,7 +83,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               whileHover={{ backgroundColor: "rgba(255,255,255,0.05)" }}
-              href="/resume/AYUSHI-MERN-STACK.pdf"
+              href="/resume/AYUSHI-MERN-STACK.pdf" target="_blank"
               style={secondaryBtn}
             >
               Download CV
